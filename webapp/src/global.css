@@ -1,0 +1,33 @@
+/* .home-page {
+    background-image: url(./img/steve-johnson-QNYhSyKnlDU-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+} */
+
+section {
+    /* background-color: #ffffff88; */
+    /* background-color: ; */
+}
+
+.card {
+    transition: 0.5s ease-in-out;
+}
+
+.card-img-overlay {
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.card:hover .card-img-overlay {
+    opacity: 1;
+    background-color: #00000077;
+}
+
+.no-link {
+    text-decoration: none;
+}
