@@ -4,11 +4,11 @@ import { API_KEY } from "../../base";
 
 export const fetchMoviesShows = () => async (dispatch: any) => {
     const movieResponse = await axios.get(
-        `http://www.omdbapi.com/?apikey=${API_KEY}&s=Lord&type=movie`
+        `https://www.omdbapi.com/?apikey=${API_KEY}&s=Lord&type=movie`
     );
 
     const showResponse = await axios.get(
-        `http://www.omdbapi.com/?apikey=${API_KEY}&s=Dead&type=series`
+        `https://www.omdbapi.com/?apikey=${API_KEY}&s=Dead&type=series`
     );
 
     dispatch({
@@ -23,7 +23,7 @@ export const fetchMoviesShows = () => async (dispatch: any) => {
 export const selectMovieSeries =
     (movieName: string) => async (dispatch: any) => {
         const response = await axios.get(
-            `http://www.omdbapi.com/?apikey=23dded09&i=${movieName}&plot=full`
+            `https://www.omdbapi.com/?apikey=23dded09&i=${movieName}&plot=full`
         );
 
         dispatch({
