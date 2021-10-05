@@ -20,4 +20,4 @@
 
 ## Website Hosted on
 
-Link: movie-searcher-webapp.netlify.app/
+Link: https://movie-searcher-webapp.netlify.app
